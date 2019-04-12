@@ -18,11 +18,8 @@ mongoose.connect('mongodb+srv://mantovs:mantovs@cluster0-7nmz0.mongodb.net/manto
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(morgan("dev"));
-app.use(
-  "/files",
-  express.static(path.resolve(__dirname, "..", "tmp", "uploads"))
-);
+// app.use(morgan("dev"));
+app.use("/files", express.static(path.resolve(__dirname,'..','tmp')));
 
 app.use(require("./routes"));
 
