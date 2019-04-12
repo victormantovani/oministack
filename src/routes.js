@@ -2,8 +2,8 @@ const routes = require("express").Router();
 const multer = require("multer");
 const multerConfig = require("./config/multer");
 
-const BoxController = require("./controller/BoxController");
-const FileController = require("./controller/FileController");
+const BoxController = require("./ctrl/BoxController");
+const FileController = require("./ctrl/FileController");
 
 routes.post("/boxes", BoxController.store);
 routes.get("/boxes/:id", BoxController.show);
