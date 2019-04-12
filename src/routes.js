@@ -2,8 +2,8 @@ const routes = require("express").Router();
 const multer = require("multer");
 const multerConfig = require("./config/multer");
 
-const BoxController = require("./ctrl/BoxController");
-const FileController = require("./ctrl/FileController");
+const BoxController = require("./mantovs/BoxController");
+const FileController = require("./mantovs/FileController");
 
 routes.post("/boxes", BoxController.store);
 routes.get("/boxes/:id", BoxController.show);
