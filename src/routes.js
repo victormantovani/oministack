@@ -4,7 +4,7 @@ const multerConfig = require("./config/multer");
 
 // const  routes = express.Router();
 
-const BoxController = require("./mantovs/BoxController");
+const BoxController = require("./controller/BoxController");
 // const FileController = require("./controllers/FileController");
 
 routes.get("/mantovs", (req, res) => {
